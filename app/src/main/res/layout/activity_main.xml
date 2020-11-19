@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="액티비티 고르기"
+        />
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <RadioButton
+            android:id="@+id/radio_second"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Second Activity"
+            />
+        <RadioButton
+            android:id="@+id/radio_third"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Third Activity"
+            />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_new_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="새 화면 열기"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</LinearLayout>
